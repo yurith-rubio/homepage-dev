@@ -626,7 +626,8 @@ svg.svg-service-ball {
 
 /* FILTER BUTTONS */
 button{
-  cursor: pointer;
+  cursor:pointer;
+  z-index: 1;
 }
 .filter-button.active{
   background-color: var(--accents);

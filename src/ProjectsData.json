@@ -8,7 +8,7 @@
                 "As the main IT memeber in charge of the store, I brough my advice and ideas for the new design and setup of the store, initially I would sketch the new features on Figma to later develop them, but as the load of work increased, I worked with a great team of designers, as well with the marketing team.",
                 "In this way, I would receive the designs and then develop them, some features and UI was proposed and designed by me. At the end every new feature and design needed to be checked and approved by me before my manager, with the responsibility of having a functional and responsive website."
             ],
-            "logo": "/src/assets/therapiedecken_logo.jpg",
+            "logo": "/therapiedecken_logo.jpg",
             "shortDescription": "Therapiedecken is an online Shopify store that sells weighed blankets as their main products.",
             "storeLink": "https://therapiedecken.de",
             "client": "Ecommerce&More",
@@ -44,37 +44,37 @@
             "screens": [
                 {
                     "screenHeading": "Homepage",
-                    "screenImage": "/src/assets/td-homepage.webp",
+                    "screenImage": "/td-homepage.webp",
                     "screenGadget": "computer"
                 },
                 {
                     "screenHeading": "Landing page",
-                    "screenImage": "/src/assets/td-leading-page.webp",
+                    "screenImage": "/td-leading-page.webp",
                     "screenGadget": "computer"
                 },
                 {
                     "screenHeading": "Product page",
-                    "screenImage": "/src/assets/td-product-page.webp",
+                    "screenImage": "/td-product-page.webp",
                     "screenGadget": "computer"
                 },
                 {
                     "screenHeading": "Slidecart",
-                    "screenImage": "/src/assets/td-slidecart.webp",
+                    "screenImage": "/td-slidecart.webp",
                     "screenGadget": "computer"
                 },
                 {
                     "screenHeading": "Homepage - mobile",
-                    "screenImage": "/src/assets/td-homepage-mobile.webp",
+                    "screenImage": "/td-homepage-mobile.webp",
                     "screenGadget": "mobile"
                 },
                 {
                     "screenHeading": "Leading page - mobile",
-                    "screenImage": "/src/assets/td-leading-page-mobile.webp",
+                    "screenImage": "/td-leading-page-mobile.webp",
                     "screenGadget": "mobile"
                 },
                 {
                     "screenHeading": "Product page - mobile",
-                    "screenImage": "/src/assets/td-product-page-mobile.webp",
+                    "screenImage": "/td-product-page-mobile.webp",
                     "screenGadget": "mobile"
                 }
             ],
@@ -88,7 +88,7 @@
                 "As with Therapiedecken, Therapiewelt is an online store that offers weighted blankets and other products related to the well-being of people.",
                 "Leading the IT team, I was in charge to incorporate some changes from TD on TW plus other features that were not on the TD store."
             ],
-            "logo": "/src/assets/therapiewelt_logo.jpg",
+            "logo": "/therapiewelt_logo.jpg",
             "shortDescription": "Therapiewelt is an online Shopify store that sells weighed blankets and other products to help people with sleeping problem among others.",
             "storeLink": "https://therapiewelt.de",
             "client": "Ecommerce&More",
@@ -124,32 +124,32 @@
             "screens": [
                 {
                     "screenHeading": "Homepage",
-                    "screenImage": "/src/assets/tw-homepage.webp",
+                    "screenImage": "/tw-homepage.webp",
                     "screenGadget": "computer"
                 },
                 {
                     "screenHeading": "Filters page",
-                    "screenImage": "/src/assets/tw-filters-page.webp",
+                    "screenImage": "/tw-filters-page.webp",
                     "screenGadget": "computer"
                 },
                 {
                     "screenHeading": "Product page",
-                    "screenImage": "/src/assets/tw-product-page.webp",
+                    "screenImage": "/tw-product-page.webp",
                     "screenGadget": "computer"
                 },
                 {
                     "screenHeading": "Homepage - mobile",
-                    "screenImage": "/src/assets/tw-homepage-mobile.webp",
+                    "screenImage": "/tw-homepage-mobile.webp",
                     "screenGadget": "mobile"
                 },
                 {
                     "screenHeading": "Collection page - mobile",
-                    "screenImage": "/src/assets/tw-collection-page-mobile.webp",
+                    "screenImage": "/tw-collection-page-mobile.webp",
                     "screenGadget": "mobile"
                 },
                 {
                     "screenHeading": "Product page - mobile",
-                    "screenImage": "/src/assets/tw-product-page-mobile.webp",
+                    "screenImage": "/tw-product-page-mobile.webp",
                     "screenGadget": "mobile"
                 }
             ],
@@ -162,7 +162,7 @@
                 "Offers an automated litter box that filters climps into a waste drawer, leaving the work of cleaning the cat toilets to a robot.",
                 "As the main IT member, I got the task to set the first store and design the look of the UI, later on, the new team of designers were in charge of the rest of the deisng and I would develop the design changes."
             ],
-            "logo": "/src/assets/katzenrobo_logo.jpg",
+            "logo": "/katzenrobo_logo.jpg",
             "shortDescription": "Sells robot litter boxes to clean the dung of cats.",
             "storeLink": "https://katzenrobo.de",
             "client": "GoMedia",
@@ -201,27 +201,27 @@
             "screens": [
                 {
                     "screenHeading": "Homepage",
-                    "screenImage": "/src/assets/kr-homepage.webp",
+                    "screenImage": "/kr-homepage.webp",
                     "screenGadget": "computer"
                 },
                 {
                     "screenHeading": "Product page",
-                    "screenImage": "/src/assets/kr-product-page.webp",
+                    "screenImage": "/kr-product-page.webp",
                     "screenGadget": "computer"
                 },
                 {
                     "screenHeading": "Slidecart",
-                    "screenImage": "/src/assets/kr-slidecart.webp",
+                    "screenImage": "/kr-slidecart.webp",
                     "screenGadget": "computer"
                 },
                 {
                     "screenHeading": "Homepage - mobile",
-                    "screenImage": "/src/assets/kr-homepage-mobile.webp",
+                    "screenImage": "/kr-homepage-mobile.webp",
                     "screenGadget": "mobile"
                 },
                 {
                     "screenHeading": "Product page - mobile",
-                    "screenImage": "/src/assets/kr-product-page-mobile.webp",
+                    "screenImage": "/kr-product-page-mobile.webp",
                     "screenGadget": "mobile"
                 }
             ],
@@ -233,7 +233,7 @@
             "description": [
                 "Their main product is a big pillow that helps people to get a good sleep and a comfortable support when laying down on it. Working on this store, I helped setting a new theme for the store, creating new product landing pages, adding new blocks, etc."
             ],
-            "logo": "/src/assets/komfortkissen_logo.avif",
+            "logo": "/komfortkissen_logo.avif",
             "shortDescription": "Sells big pillows for a good rest",
             "storeLink": "https://komfortkissen.de",
             "client": "GoMedia",
@@ -268,17 +268,17 @@
             "screens": [
                 {
                     "screenHeading": "Homepage",
-                    "screenImage": "/src/assets/kk-homepage.webp",
+                    "screenImage": "/kk-homepage.webp",
                     "screenGadget": "computer"
                 },
                 {
                     "screenHeading": "Product page",
-                    "screenImage": "/src/assets/kk-product-page.webp",
+                    "screenImage": "/kk-product-page.webp",
                     "screenGadget": "computer"
                 },
                 {
                     "screenHeading": "Landing page",
-                    "screenImage": "/src/assets/kk-landing-page.webp",
+                    "screenImage": "/kk-landing-page.webp",
                     "screenGadget": "computer"
                 }
             ],
@@ -290,7 +290,7 @@
             "description": [
                 "Sells handmade cooking knives</p><p>I was hired to redesign their online store with a fresh look, unfortunatelly the client decided to go back to the old design, for this you can see the design on my partner store"
             ],
-            "logo": "/src/assets/therapiedecken_logo.png",
+            "logo": "/therapiedecken_logo.png",
             "shortDescription": "Sells robot litter boxes to clean the dung of cats.",
             "storeLink": "https://kuechenkompane.de",
             "figmaLink": "https://www.figma.com/proto/D69vmoVz5YojgFpY2JNtXZ/Final-design?type=design&node-id=1025-1014&t=ekmnG6saZ0Jdyrj3-1&scaling=min-zoom&page-id=762%3A915&starting-point-node-id=1025%3A1014&mode=design",
@@ -326,22 +326,22 @@
             "screens": [
                 {
                     "screenHeading": "Homepage",
-                    "screenImage": "/src/assets/kuk-homepage.webp",
+                    "screenImage": "/kuk-homepage.webp",
                     "screenGadget": "computer"
                 },
                 {
                     "screenHeading": "Product page",
-                    "screenImage": "/src/assets/kuk-product-page.webp",
+                    "screenImage": "/kuk-product-page.webp",
                     "screenGadget": "computer"
                 },
                 {
                     "screenHeading": "Product page - mobile",
-                    "screenImage": "/src/assets/kuk-product-page-mobile.webp",
+                    "screenImage": "/kuk-product-page-mobile.webp",
                     "screenGadget": "mobile"
                 },
                 {
                     "screenHeading": "Landing page - mobile",
-                    "screenImage": "/src/assets/kuk-landing-page-mobile.webp",
+                    "screenImage": "/kuk-landing-page-mobile.webp",
                     "screenGadget": "mobile"
                 }
             ],
@@ -351,7 +351,7 @@
             "name": "nico",
             "heading": "Nico.com",
             "description": ["Here is the description of the prroject Nico.com"],
-            "logo": "/src/assets/therapiedecken_logo.png",
+            "logo": "/therapiedecken_logo.png",
             "shortDescription": "Sells robot litter boxes to clean the dung of cats.",
             "storeLink": "https://nico.com",
             "client": "Denisse Pina",
@@ -364,7 +364,7 @@
             "name": "swissens",
             "heading": "Swissens",
             "description": ["Here is the description of the prroject Swissens.ch"],
-            "logo": "/src/assets/therapiedecken_logo.png",
+            "logo": "/therapiedecken_logo.png",
             "shortDescription": "Sells robot litter boxes to clean the dung of cats.",
             "storeLink": "https://swissens.de",
             "client": "Ecommerce&More",

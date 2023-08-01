@@ -13,7 +13,7 @@ const info = "This is Yurith...";
         <section id="About">
             <div className="about-wrapper">
                 <div className="about left-side">
-                    <div className="profile-picture" style={{backgroundImage: "url('/src/assets/yurith-portrait.png')"}}>
+                    <div className="profile-picture" style={{backgroundImage: "url('/yurith-portrait.png')"}}>
 
                     </div>
                     <div className="about left-info">

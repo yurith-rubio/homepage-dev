@@ -210,7 +210,7 @@ export default function PortfolioChart(){
       <div className='project pop-up-content'>
         <div className='project heading'>
           {info.heading}
-          <button className='project close-pop-up icon-wrapper' onClick={handleClosePopupButton}>
+          <button className='button project close-pop-up icon-wrapper' onClick={handleClosePopupButton}>
             <GetIcon icon='xClose' className='medium-icon color-blue' />
           </button>
         </div>
