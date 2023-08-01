@@ -1,5 +1,7 @@
-export default function NavButton(props){
-    const {children, className} = props;
+import {Link} from "react-router-dom";
 
-    return <button className={`nav-bar-button ${className}`}>{children}</button>
+export default function NavButton(props){
+    const {children, className, link} = props;
+
+    return <Link to={link} className={`nav-bar-button ${className}`}>{children}</Link>
 }

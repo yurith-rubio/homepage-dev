@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
+import Services from './Services.jsx';
 import svggirl from "/intro-girl.svg";
 
 export default function MainIntro(){
@@ -19,5 +20,6 @@ export default function MainIntro(){
                 <img src={svggirl} className='intro-girl' />
             </div>
         </div>
+        <Services/>
     </>
 }
