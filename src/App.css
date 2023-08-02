@@ -228,7 +228,6 @@ section{
 
 .service-nav-dot.active{
   background-color: var(--highlights);
-  cursor: pointer;
 }
 
 .service-nav-dot:not(:last-child){
@@ -237,7 +236,6 @@ section{
 
 .service-ball-path{
   fill: var(--light-green);
-  cursor: pointer;
 }
 
 svg.svg-service-ball {
@@ -386,7 +384,6 @@ svg.svg-service-ball {
 /* PROJECTS */
 .project-circle:hover{
   fill: var(--highlights);
-  cursor: pointer;
 }
 .project.upper-cover-space{
   background-color: var(--light-green);
@@ -590,9 +587,6 @@ svg.svg-service-ball {
   color: var(--accents);
   border: 1px solid var(--accents);
 }
-.nav-bar-button:not(.active){
-  cursor: pointer;
-}
 .nav-bar-button:before{
   border-left: 1px solid var(--light-green) !important;
   height:43px;
@@ -625,9 +619,8 @@ svg.svg-service-ball {
 }
 
 /* FILTER BUTTONS */
-button{
+button, .service-ball-path, .nav-bar-button:not(.active), .service-nav-dot.active, .project-circle:hover{
   cursor:pointer;
-  z-index: 1;
 }
 .filter-button.active{
   background-color: var(--accents);
