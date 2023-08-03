@@ -106,7 +106,7 @@ a:not(.storeLink){
   text-align: center;
   display: flex;
   justify-content: center;
-  align-self: center;
+  align-items: center;
 }
 
 .intro-girl{
@@ -339,7 +339,7 @@ svg.svg-service-ball {
 .service.text{
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
-  font-size: .8em;
+  font-size: 18px;
 }
 .arrow-prototyping{
   transform: rotate(90deg);
@@ -661,11 +661,26 @@ button, .service-ball-path, .nav-bar-button:not(.active), .service-nav-dot.activ
 .about-me-link{
   padding-right:20px;
 }
+.about-me-link.active,
+.about-experience-link.active{
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: var(--highlights);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
 .about-wrapper{
   max-width: 1200px;
+  display: flex;
+}
+.about-wrapper, .contact-wrapper{
   width: 100%;
   border: 1px solid var(--light-green);
-  display: flex;
+}
+.contact-wrapper{
+  max-width: 600px;
+  flex-direction: column;
+  padding: 50px;
 }
 .about.left-side{
   width: 35%;

@@ -23,7 +23,6 @@ export default function Services(){
     const callbackFunction = (entries) => {
         entries.forEach(entry => {
             const id = entry.target.id;
-            console.log(id);
 
             setVisibleSection({...visibleSection, [id]: true});
             let position = ballPositions;
@@ -53,8 +52,6 @@ export default function Services(){
                     gsap.to("#ball-Web", {x: position.positionX.Service, y: position.positionY.Web, scale: 0.15});
                     gsap.to("#ball-Prototyping", {x: position.positionX.Service, y: position.positionY.Prototyping, scale: 0.15});
                     gsap.to("#ball-Shopify", {x: position.positionX.Service, y: position.positionY.Shopify, scale: 0.15})
-                    gsap.to(".service-ball-arrow", {autoAlpha:0});
-                    gsap.to(".service-ball-info", {autoAlpha:0});
                     gsap.set("#ball-Data path", {fill:'var(--highlights)'});
                     gsap.set(["#ball-Web path", "#ball-Prototyping path", "#ball-Shopify path"], {fill:'var(--light-green)'});
                 } else if (id === "Web"){
@@ -81,6 +78,11 @@ export default function Services(){
                 } else if (id === 'mainIntro'){
                     gsap.to(["#ball-Data", "#ball-Web", "#ball-Prototyping", "#ball-Shopify"], {autoAlpha:0});
                 }
+                if (id != "Services") {
+                    gsap.to(".service-ball-arrow", {autoAlpha:0});
+                    gsap.to(".service-ball-info", {autoAlpha:0});
+                }
+
             } else {
                 setVisibleSection({...visibleSection, [id]: false});
             }

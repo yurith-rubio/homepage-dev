@@ -1,7 +1,7 @@
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 export default function NavButton(props){
     const {children, className, link} = props;
 
-    return <Link to={link} className={`nav-bar-button ${className}`}>{children}</Link>
+    return <NavLink to={link} className={({isActive}) => isActive ? "nav-bar-button active" : "nav-bar-button"}>{children}</NavLink>
 }

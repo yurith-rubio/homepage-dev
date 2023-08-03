@@ -89,7 +89,12 @@ export default function PortfolioChart(){
         select('.project.client')
         .text(value.client)
 
-        console.log(value)
+        select('.project.screen-heading')
+        .text(value.screens[0].screenHeading)
+
+        select('.project.screen-image')
+        .attr('src', value.screens[0].screenImage)
+        
         if(value.figmaLink) {
           select('.figma')
           .text('Figma link:')
@@ -161,6 +166,7 @@ export default function PortfolioChart(){
       .transition()
       .duration(1000)
       .attr('transform', function (d, i) { return "translate(" + ((w/2-r) * Math.cos((interval*i) * Math.PI/180)) + "," + ((w/2-r) * Math.sin((interval*i) * Math.PI/180)) + ")";})
+
   }
 
   function hasFigmaLink() {
@@ -240,7 +246,7 @@ export default function PortfolioChart(){
             </svg>
           </div>
           <div className='screen-info'>
-            <h2 className='project screen-heading'>{data[0].screens[0].screenHeading}</h2>
+            <h2 className='project screen-heading'></h2>
             <div className='screen-image-wrapper'>
               <img className='project screen-image' src={data[0].screens[0].screenImage} />
             </div>

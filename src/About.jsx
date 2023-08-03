@@ -1,13 +1,6 @@
-import { useState, useEffect } from "react";
-import {Link, Outlet, Route} from "react-router-dom";
-import AboutInfo from "./AboutInfo";
+import {NavLink, Outlet, Navigate} from "react-router-dom";
 
 export default function About(){
-const [about, setAbout] = useState(false);
-
-const info = "This is Yurith...";
-
-//console.log(jobs);
 
     return <>
         <section id="About">
@@ -32,8 +25,8 @@ const info = "This is Yurith...";
                 </div>
                 <div className="about right-side">
                     <div className="about nav">
-                        <Link to="me" className="about-me-link">ABOUT ME</Link>
-                        <Link to="experience">EXPERIENCE</Link>
+                        <NavLink to="me" className={({isActive}) => isActive ? "about-me-link active" : "about-me-link"}>ABOUT ME</NavLink>
+                        <NavLink to="experience" className={({isActive}) => isActive ? "about-experience-link active" : "about-experience-link"}>EXPERIENCE</NavLink>
                     </div>
                     <div className="about right-info">
                         <Outlet />

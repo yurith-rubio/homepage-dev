@@ -3,7 +3,6 @@ import projectsData from './ProjectsData.json';
 
 export default function ProjectsInfo(props) {
     const {data} = props;
-    //const text = textMapping['TherapieDecken']?.text;
     const heading = data[0].heading;
     const description = data[0].description;
     
