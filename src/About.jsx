@@ -6,7 +6,7 @@ export default function About(){
         <section id="About">
             <div className="about-wrapper">
                 <div className="about left-side">
-                    <div className="profile-picture" style={{backgroundImage: "url('/yurith-portrait.png')"}}>
+                    <div className="profile-picture" style={{backgroundImage: "url('/yurith-rubio-profile-picture-retro.jpeg')"}}>
 
                     </div>
                     <div className="about left-info">

@@ -295,7 +295,7 @@
             "storeLink": "https://kuechenkompane.de",
             "figmaLink": "https://www.figma.com/proto/D69vmoVz5YojgFpY2JNtXZ/Final-design?type=design&node-id=1025-1014&t=ekmnG6saZ0Jdyrj3-1&scaling=min-zoom&page-id=762%3A915&starting-point-node-id=1025%3A1014&mode=design",
             "client": "Matts Radzuweit",
-            "tools": ["HTML", "CSS", "Liquid", "Javascript"],
+            "tools": ["HTML", "CSS", "Liquid", "Javascript", "Figma", "Krita"],
             "tasks": [
                 {
                     "title": "Store's design",
@@ -345,32 +345,97 @@
                     "screenGadget": "mobile"
                 }
             ],
-            "tags": ["shopify", "javascript"]
+            "tags": ["shopify", "javascript", "design"]
         },
         {
             "name": "nico",
             "heading": "Nico.com",
             "description": ["Here is the description of the prroject Nico.com"],
-            "logo": "/therapiedecken_logo.png",
+            "logo": "/nico-logo.webp",
             "shortDescription": "Sells robot litter boxes to clean the dung of cats.",
-            "storeLink": "https://nico.com",
+            "storeLink": "https://nico-playground.myshopify.com/",
             "client": "Denisse Pina",
             "tools": ["HTML", "CSS", "Liquid", "Javascript", "Figma"],
-            "tasks": [],
-            "screens": [],
-            "tags": ["shopify", "javascript", "ux", "design"]
+            "tasks": [
+                {
+                    "title": "Store's design and setup",
+                    "items": [
+                        "Setup the Shopify theme",
+                        "Store's design",
+                        "Icons design",
+                        "Animations"
+                    ]
+                },
+                {
+                    "title": "Info setup",
+                    "items": [
+                        "Upload product's images and info",
+                        "AI Content creation for collection pages and landing pages"
+                    ]
+                },
+                {
+                    "title": "Responsiveness",
+                    "items": [
+                        "Adapt design to a mobile format"
+                    ]
+                }
+            ],
+            "screens": [
+                {
+                    "screenHeading": "Homepage design",
+                    "screenImage": "/nico-homepage.webp",
+                    "screenGadget": "computer"
+                },
+                {
+                    "screenHeading": "Product page",
+                    "screenImage": "/nico-collection-page.webp",
+                    "screenGadget": "computer"
+                },
+                {
+                    "screenHeading": "Product page",
+                    "screenImage": "/nico-product-page.webp",
+                    "screenGadget": "mobile"
+                }
+            ],
+            "tags": ["shopify", "javascript", "ux", "design", "management"]
         },
         {
             "name": "swissens",
             "heading": "Swissens",
             "description": ["Here is the description of the prroject Swissens.ch"],
-            "logo": "/therapiedecken_logo.png",
+            "logo": "/swisens-logo.webp",
             "shortDescription": "Sells robot litter boxes to clean the dung of cats.",
-            "storeLink": "https://swissens.de",
-            "client": "Ecommerce&More",
-            "tools": ["HTML", "CSS", "Wordpress", "Elementor"],
-            "tasks": [],
-            "screens": [],
+            "storeLink": "https://www.swisens.ch/",
+            "client": "Petra Müller",
+            "tools": ["HTML", "CSS", "Wordpress", "Elementor", "Figma"],
+            "tasks": [
+                {
+                    "title": "Store's design",
+                    "items": [
+                        "Redesign the whole store",
+                        "Design illustrations",
+                        "Setup the new theme",
+                        "Animate intro text"
+                    ]
+                }
+            ],
+            "screens": [
+                {
+                    "screenHeading": "Landing page design",
+                    "screenImage": "/sw-lp-design.webp",
+                    "screenGadget": "computer"
+                },
+                {
+                    "screenHeading": "Landing page wireframe",
+                    "screenImage": "/sw-lp-wireframe.webp",
+                    "screenGadget": "computer"
+                },
+                {
+                    "screenHeading": "Popup",
+                    "screenImage": "/sw-popup.webp",
+                    "screenGadget": "mobile"
+                }
+            ],
             "tags": ["landing-page", "design"]
         }
     ]

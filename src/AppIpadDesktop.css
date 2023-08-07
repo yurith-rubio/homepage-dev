@@ -1,0 +1,31 @@
+@media only screen and (min-width: 768px) {
+    .h1-main{
+        font-size: 5.2rem;
+    }
+    #Services{
+        align-items: center;
+    }
+    .intro-subheading{
+        font-size: 3.2rem;
+    }
+    .service-ball-content{
+        flex-direction: column;
+    }
+    .service-ball-info.down-text{
+        top: 230px;
+    }
+    .service-info, .projects-info{
+        width: 100%;
+        max-width:40%;
+        height: fit-content;
+    }
+    .service-content, .projects-content{
+        display: flex;
+        align-items: center;
+        max-width: 1200px;
+    }
+    .service-graph, .projects-graph{
+        width: 100%;
+        max-width: 60%;
+    }
+}

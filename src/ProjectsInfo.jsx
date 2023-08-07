@@ -1,6 +1,3 @@
-//dangerouslySetInnerHTML={{__html: text}}
-import projectsData from './ProjectsData.json';
-
 export default function ProjectsInfo(props) {
     const {data} = props;
     const heading = data[0].heading;

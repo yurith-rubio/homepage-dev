@@ -4,6 +4,7 @@ import ServiceGraph from './ServiceGraph.jsx';
 import { useState, useEffect, useRef } from 'react';
 
 export default function Services(){
+    const isMobile = window.innerWidth <= 767;
     const nav = useRef();
     const data = useRef();
     const web = useRef();
@@ -20,74 +21,7 @@ export default function Services(){
 
     let ballPositions = {};
     
-    const callbackFunction = (entries) => {
-        entries.forEach(entry => {
-            const id = entry.target.id;
-
-            setVisibleSection({...visibleSection, [id]: true});
-            let position = ballPositions;
-            let windownHeight = position.positionY.Services * 2;
-            
-            gsap.to("#ball-Data", {x: position.positionX.Data, y: position.positionY.Services, scale: 1.0});
-            gsap.to("#ball-Web", {x: position.positionX.Web, y: position.positionY.Services, scale: 1.0});
-            gsap.to("#ball-Prototyping", {x: position.positionX.Prototyping, y: position.positionY.Services, scale: 1.0});
-            gsap.to("#ball-Shopify", {x: position.positionX.Shopify, y: position.positionY.Services, scale: 1.0});
-            gsap.to(".service-ball-arrow", {autoAlpha:1});
-            gsap.to(".service-ball-info", {autoAlpha:1});
-            gsap.set(["#ball-Data path", "#ball-Web path", "#ball-Prototyping path", "#ball-Shopify path"], {fill:'var(--light-green)'});
-            
-            if(entry.isIntersecting){
-                
-
-                if (id === "Services") {
-                    gsap.to("#ball-Data", {x: position.positionX.Data, y: position.positionY.Services, scale: 1.0});
-                    gsap.to("#ball-Web", {x: position.positionX.Web, y: position.positionY.Services, scale: 1.0});
-                    gsap.to("#ball-Prototyping", {x: position.positionX.Prototyping, y: position.positionY.Services, scale: 1.0});
-                    gsap.to("#ball-Shopify", {x: position.positionX.Shopify, y: position.positionY.Services, scale: 1.0});
-                    gsap.to(".service-ball-arrow", {autoAlpha:1});
-                    gsap.to(".service-ball-info", {autoAlpha:1});
-                    gsap.set(["#ball-Data path", "#ball-Web path", "#ball-Prototyping path", "#ball-Shopify path"], {fill:'var(--light-green)'});
-                } else if (id === "Data"){
-                    gsap.to("#ball-Data", {x: position.positionX.Service, y: position.positionY.Data, scale: 0.15});
-                    gsap.to("#ball-Web", {x: position.positionX.Service, y: position.positionY.Web, scale: 0.15});
-                    gsap.to("#ball-Prototyping", {x: position.positionX.Service, y: position.positionY.Prototyping, scale: 0.15});
-                    gsap.to("#ball-Shopify", {x: position.positionX.Service, y: position.positionY.Shopify, scale: 0.15})
-                    gsap.set("#ball-Data path", {fill:'var(--highlights)'});
-                    gsap.set(["#ball-Web path", "#ball-Prototyping path", "#ball-Shopify path"], {fill:'var(--light-green)'});
-                } else if (id === "Web"){
-                    gsap.to("#ball-Data", {x: position.positionX.Service, y: (position.positionY.Data + windownHeight), scale: 0.15});
-                    gsap.to("#ball-Web", {x: position.positionX.Service, y: (position.positionY.Web + windownHeight), scale: 0.15});
-                    gsap.to("#ball-Prototyping", {x: position.positionX.Service, y: (position.positionY.Prototyping + windownHeight), scale: 0.15});
-                    gsap.to("#ball-Shopify", {x: position.positionX.Service, y: (position.positionY.Shopify + windownHeight), scale: 0.15})
-                    gsap.set("#ball-Web path", {fill:'var(--highlights)'});
-                    gsap.set(["#ball-Data path", "#ball-Prototyping path", "#ball-Shopify path"], {fill:'var(--light-green)'});
-                } else if (id === "Prototyping"){
-                    gsap.to("#ball-Data", {x: position.positionX.Service, y: (position.positionY.Data + windownHeight * 2), scale: 0.15});
-                    gsap.to("#ball-Web", {x: position.positionX.Service, y: (position.positionY.Web + windownHeight * 2), scale: 0.15});
-                    gsap.to("#ball-Prototyping", {x: position.positionX.Service, y: (position.positionY.Prototyping + windownHeight * 2), scale: 0.15});
-                    gsap.to("#ball-Shopify", {x: position.positionX.Service, y: (position.positionY.Shopify + windownHeight * 2), scale: 0.15})
-                    gsap.set("#ball-Prototyping path", {fill:'var(--highlights)'});
-                    gsap.set(["#ball-Data path", "#ball-Web path", "#ball-Shopify path"], {fill:'var(--light-green)'});
-                } else if (id === "Shopify"){
-                    gsap.to("#ball-Data", {x: position.positionX.Service, y: (position.positionY.Data + windownHeight * 3), scale: 0.15});
-                    gsap.to("#ball-Web", {x: position.positionX.Service, y: (position.positionY.Web + windownHeight * 3), scale: 0.15});
-                    gsap.to("#ball-Prototyping", {x: position.positionX.Service, y: (position.positionY.Prototyping + windownHeight * 3), scale: 0.15});
-                    gsap.to("#ball-Shopify", {x: position.positionX.Service, y: (position.positionY.Shopify + windownHeight * 3), scale: 0.15});
-                    gsap.set("#ball-Shopify path", {fill:'var(--highlights)'});
-                    gsap.set(["#ball-Data path", "#ball-Web path", "#ball-Prototyping path"], {fill:'var(--light-green)'});
-                } else if (id === 'mainIntro'){
-                    gsap.to(["#ball-Data", "#ball-Web", "#ball-Prototyping", "#ball-Shopify"], {autoAlpha:0});
-                }
-                if (id != "Services") {
-                    gsap.to(".service-ball-arrow", {autoAlpha:0});
-                    gsap.to(".service-ball-info", {autoAlpha:0});
-                }
-
-            } else {
-                setVisibleSection({...visibleSection, [id]: false});
-            }
-        });
-    }
+    
 
     const options = {
         root: null,
@@ -97,6 +31,7 @@ export default function Services(){
 
     function setElementPositions() {
         const initialPosition = document.querySelector('#Services').getBoundingClientRect();
+        const windownHeight = initialPosition.height;
         const servicesY = initialPosition.height/2;
         const dataY = initialPosition.height + (initialPosition.height/2) - 200;
         const webY = initialPosition.height + (initialPosition.height/2) - 150;
@@ -126,6 +61,121 @@ export default function Services(){
             }
         };
     }
+
+    const callbackFunction = (entries) => {
+        entries.forEach(entry => {
+            const id = entry.target.id;
+
+            setVisibleSection({...visibleSection, [id]: true});
+            let position = ballPositions;
+            const initialPosition = document.querySelector('#Services').getBoundingClientRect();
+            const windownHeight = initialPosition.height;
+            
+            if(entry.isIntersecting){
+                const servicesSections = ["#ball-Data", "#ball-Web", "#ball-Prototyping", "#ball-Shopify"];
+                gsap.to([".service-ball-arrow", ".service-ball-info"], {autoAlpha:1});
+                gsap.set(["#ball-Data path", "#ball-Web path", "#ball-Prototyping path", "#ball-Shopify path"], {fill:'var(--light-green)'});
+
+                const Xservice = position.positionX.Service
+                if (id === "Services" || id === "mainIntro") {
+                    servicesSections.forEach((section, index) => {
+                        gsap.to(section, {scale: 1.0});
+
+                        if(isMobile){
+                                gsap.to(section, {x: 0, y: index * 200});
+                        } else {
+                            gsap.to("#ball-Data", {x: position.positionX.Data, y: position.positionY.Services});
+                            gsap.to("#ball-Web", {x: position.positionX.Web, y: position.positionY.Services});
+                            gsap.to("#ball-Prototyping", {x: position.positionX.Prototyping, y: position.positionY.Services});
+                            gsap.to("#ball-Shopify", {x: position.positionX.Shopify, y: position.positionY.Services});
+                        }
+                    })
+                }
+                
+                
+                if (id === "Data" || id === "Web" || id === "Prototyping" || id === "Shopify"){
+                    gsap.set(`#ball-${id} path`, {fill:'var(--highlights)'});
+
+                    if(id === "Data"){
+                        if(isMobile){
+                            servicesSections.forEach((section, index) => {
+                                gsap.to(section, {x: -170, y: position.positionY[id] + index * 40})
+                            })
+                        } else {
+                            servicesSections.forEach((section, index) => {
+                                gsap.to(section, {x: Xservice, y: position.positionY[id] + index * 40})
+                            })
+                        }   
+                    } else if (id === "Web") {
+                        if(isMobile){
+                            servicesSections.forEach((section, index) => {
+                                gsap.to(section, {x: -170, y: position.positionY[id] + index * 40 + windownHeight})
+                            })
+                        } else {
+                            servicesSections.forEach((section, index) => {
+                                gsap.to(section, {x: Xservice, y: position.positionY[id] + index * 40 + windownHeight})
+                            })
+                        }
+                    } else if (id === "Prototyping") {
+                        if(isMobile){
+                            servicesSections.forEach((section, index) => {
+                                gsap.to(section, {x: -170, y: position.positionY[id] + index * 40 + windownHeight * 2})
+                            })
+                        } else {
+                            servicesSections.forEach((section, index) => {
+                                gsap.to(section, {x: Xservice, y: position.positionY[id] + index * 40 + windownHeight * 2})
+                            })
+                        }
+                    } else if (id === "Shopify") {
+                        if(isMobile){
+                            servicesSections.forEach((section, index) => {
+                                gsap.to(section, {x: -170, y: position.positionY[id] + index * 40 + windownHeight * 3})
+                            })
+                        } else {
+                            servicesSections.forEach((section, index) => {
+                                gsap.to(section, {x: Xservice, y: position.positionY[id] + index * 40 + windownHeight * 3})
+                            })
+                        }
+                    }
+                    
+                } 
+                /*
+                if (id === "Data"){
+                    
+                    gsap.to("#ball-Data", {x: Xservice, y: position.positionY.Data})
+                    gsap.to("#ball-Web", {x: Xservice, y: position.positionY.Web})
+                    gsap.to("#ball-Prototyping", {x: Xservice, y: position.positionY.Prototyping})
+                    gsap.to("#ball-Shopify", {x: Xservice, y: position.positionY.Shopify})
+                    
+                } else if (id === "Web"){
+                    gsap.to("#ball-Data", {x: Xservice, y: (position.positionY.Data + windownHeight)})
+                    gsap.to("#ball-Web", {x: Xservice, y: (position.positionY.Web + windownHeight)})
+                    gsap.to("#ball-Prototyping", {x: Xservice, y: (position.positionY.Prototyping + windownHeight)})
+                    gsap.to("#ball-Shopify", {x: Xservice, y: (position.positionY.Shopify + windownHeight)})
+                } else if (id === "Prototyping"){
+                    gsap.to("#ball-Data", {x: Xservice, y: (position.positionY.Data + windownHeight * 2)})
+                    gsap.to("#ball-Web", {x: Xservice, y: (position.positionY.Web + windownHeight * 2)})
+                    gsap.to("#ball-Prototyping", {x: Xservice, y: (position.positionY.Prototyping + windownHeight * 2)})
+                    gsap.to("#ball-Shopify", {x: Xservice, y: (position.positionY.Shopify + windownHeight * 2)})
+                } else if (id === "Shopify"){
+                    gsap.to("#ball-Data", {x: Xservice, y: (position.positionY.Data + windownHeight * 3)})
+                    gsap.to("#ball-Web", {x: Xservice, y: (position.positionY.Web + windownHeight * 3)})
+                    gsap.to("#ball-Prototyping", {x: Xservice, y: (position.positionY.Prototyping + windownHeight * 3)})
+                    gsap.to("#ball-Shopify", {x: Xservice, y: (position.positionY.Shopify + windownHeight * 3)})
+                }
+
+                */
+                if (id != "Services") {
+                    gsap.to(servicesSections, {scale: 0.15});
+                    gsap.to([".service-ball-arrow", ".service-ball-info"], {autoAlpha:0});
+                }
+
+            } else {
+                setVisibleSection({...visibleSection, [id]: false});
+            }
+        });
+    }
+
 
     function handleClickScrollNavButton(event){
         event.preventDefault();

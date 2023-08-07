@@ -1,0 +1,26 @@
+@media only screen and (max-width:767px){
+    .h1-main{
+        font-size: 3rem;
+    }
+    .intro-subheading{
+        font-size: 2.5rem;
+    }
+    .service-nav-wrapper{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+    }
+    .service-ball-content{
+        align-items: center;
+    }
+    .service-ball-content{
+        margin-top: 150px;
+    }
+    .service-ball-arrow{
+        display: none;
+    }
+    #ServiceIntro{
+        padding-top: 50px;
+    }
+}

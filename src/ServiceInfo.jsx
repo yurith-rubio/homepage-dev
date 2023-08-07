@@ -2,41 +2,37 @@ const textMapping = {
     "Data": {
         "headline": "Data Visualization",
         "text": `<p>
-        A well-designed website has the power to attract and convert visitors into customers, ultimately boosting your revenue and profitability.
+        Immerse your users in the narrative of your data with powerful interactive charts, maps, and tables. 
         </p>
         <p>
-        When visitors arrive at your website, they make split-second judgments based on its visual appeal and ease of use. 
-        A special web design that captivates their attention and provides a seamless browsing experience increases the likelihood of them staying on your site longer, exploring your products or services, and ultimately making a purchase.
+        By encouraging active engagement, your readers will effortlessly grasp valuable insights, leading to a deeper understanding and appreciation of your data-driven story.
         </p>`
     },
     "Web": {
         "headline": "Web App Design and Development",
         "text": `<p>
-        A well-designed website has the power to attract and convert visitors into customers, ultimately boosting your revenue and profitability.
+        The first few moments when visitors land on your website are crucial.  A well thought out web design captivates users right away.
         </p>
         <p>
-        When visitors arrive at your website, they make split-second judgments based on its visual appeal and ease of use. 
-        A special web design that captivates their attention and provides a seamless browsing experience increases the likelihood of them staying on your site longer, exploring your products or services, and ultimately making a purchase.
+        By utilizing captivating colors, images, and animations, you can substantially increase the likelihood of converting visitors into customers, leading to a significant boost in revenue for your business.
         </p>`
     },
     "Prototyping": {
         "headline": "Prototyping and Proof of Concept",
         "text": `<p>
-        A well-designed website has the power to attract and convert visitors into customers, ultimately boosting your revenue and profitability.
+        Whether you're introducing a new product or refining an existing one. 
         </p>
         <p>
-        When visitors arrive at your website, they make split-second judgments based on its visual appeal and ease of use. 
-        A special web design that captivates their attention and provides a seamless browsing experience increases the likelihood of them staying on your site longer, exploring your products or services, and ultimately making a purchase.
+        With rigorous testing and prototying, you will get valuable insights and informed decision making. By visualizing and validating your ideas early on, you can avoid unnecessary expenses on last-minute changes during full-scale production. 
         </p>`
     },
     "Shopify": {
         "headline": "Shopify Design and Development",
         "text": `<p>
-        A well-designed website has the power to attract and convert visitors into customers, ultimately boosting your revenue and profitability.
+        Unlock your online business potential with our expertise in building fast and beautifully designed Shopify stores. 
         </p>
         <p>
-        When visitors arrive at your website, they make split-second judgments based on its visual appeal and ease of use. 
-        A special web design that captivates their attention and provides a seamless browsing experience increases the likelihood of them staying on your site longer, exploring your products or services, and ultimately making a purchase.
+        I specialize in fast and visually stunning e-commerce websites.  Let me take care of the technicalities, while you focus on growing your business and delighting your customers.
         </p>`
     }
 };
