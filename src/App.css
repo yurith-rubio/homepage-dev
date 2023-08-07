@@ -61,6 +61,9 @@ button{
 h1{
   margin: 0;
 }
+.intro-heading{
+  padding: 30px;
+}
 
 /* TEXT SIZES */
 .h1-main{
@@ -80,9 +83,6 @@ h1{
 .subheading{
   text-transform: uppercase;
   font-weight: bold;
-}
-.big-text{
-  font-size: 2.3rem;
 }
 
 p{
@@ -619,8 +619,6 @@ button, .service-ball-path, .nav-bar-button:not(.active), .service-nav-dot.activ
 /* ANIMATIONS */
 .text-up{
   position: relative;
-  animation: text-up 1s forwards;
-  top: 30vh;
   opacity: 0;
 }
 
@@ -717,6 +715,17 @@ button, .service-ball-path, .nav-bar-button:not(.active), .service-nav-dot.activ
   }
   to {
     top: 30vh;
+    opacity: 1;
+  }
+}
+
+@keyframes text-up-mobile{
+  from {
+    top: 13vh;
+    opacity: 0;
+  }
+  to {
+    top: 10vh;
     opacity: 1;
   }
 }

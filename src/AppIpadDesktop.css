@@ -1,6 +1,9 @@
 @media only screen and (min-width: 768px) {
     .h1-main{
-        font-size: 5.2rem;
+        font-size: 4rem;
+    }
+    .big-text{
+        font-size: 2rem;
     }
     #Services{
         align-items: center;
@@ -27,5 +30,10 @@
     .service-graph, .projects-graph{
         width: 100%;
         max-width: 60%;
+    }
+    /* ANIMATIONS */
+    .text-up{
+        animation: text-up 1s forwards;
+        top: 30vh;
     }
 }

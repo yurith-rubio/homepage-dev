@@ -3,7 +3,11 @@ import NavButton from './NavButton.jsx';
 export default function NavBar(){
     const isMobile = window.innerWidth <= 767;   
     if (isMobile) {
-        return <div>test</div>
+        return <div id='Hamburger'>
+                    <button className='btn-hamburguer'>
+                        <img className='hamburguer' src='./hamburguer.svg'/>
+                    </button>
+                </div>
     } else {
         return (
             <div id='NavBar'>
