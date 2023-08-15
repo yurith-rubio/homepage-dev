@@ -142,7 +142,7 @@ export default function Services(){
                 } 
                 
                 if (id != "Services") {
-                    gsap.to(servicesSections, {scale: 0.15, autoAlpha:0});
+                    gsap.to(servicesSections, {scale: 0.15});
                     gsap.to([".service-ball-arrow", ".service-ball-info"], {autoAlpha:0});
                 }
 

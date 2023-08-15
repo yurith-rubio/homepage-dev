@@ -28,6 +28,33 @@
     #ServiceIntro{
         padding-top: 50px;
     }
+    /* PROJECTS */
+    #Projects, #ServicesSection{
+        padding-top: 70px;
+    }
+    .projects-info{
+        display: none;
+    }
+    .filters-wrapper   {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 50px;
+    }
+    .projects-graph{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .project.task-description-area{
+        flex-direction: column;
+    }
+    /* ABOUT PAGE */
+    .about-wrapper{
+        flex-direction: column;
+    }
+    
     /* NAV MENU */
     #Hamburger{
         width: 100%;
@@ -35,12 +62,35 @@
         height: 50px;
         position: fixed;
         top: 0;
+        left:0;
         z-index: 1;
         display: flex;
     }
     #Hamburguer .hamburguer{
         width: 30px;
     }
+    #Slidemenu{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        max-width: 300px;
+        width: 100%;
+        position: fixed;
+        z-index: 2;
+        background-color: var(--light-green);
+        left: 0;
+    }
+    .btn-close-slidemenu{
+        display: flex;
+        justify-content: end;
+    }
+    #Slidemenu .nav-bar-button{
+        color: var(--bg-color);
+    }
+    .btn-close-slidemenu svg, .btn-hamburguer svg{
+        padding: 10px;
+    }
+
     /* ANIMATIONS */
     .text-up{
         animation: text-up-mobile 1s forwards;

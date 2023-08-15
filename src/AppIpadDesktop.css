@@ -31,9 +31,20 @@
         width: 100%;
         max-width: 60%;
     }
+    /* ABOUT PAGE */
+    .about.left-side{
+        width: 35%;
+    }
+    .about.right-side{
+        width: 65%;
+    }
     /* ANIMATIONS */
     .text-up{
         animation: text-up 1s forwards;
         top: 30vh;
+    }
+    /* PROJECTS */
+    .project.task-description{
+        width: 30%;
     }
 }
