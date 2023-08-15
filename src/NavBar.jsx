@@ -18,10 +18,12 @@ export default function NavBar(){
     
     if (isMobile) {
         return  <>
-                    <div id='Hamburger'>
-                        <button className='btn-hamburguer' onClick={handleToggleMenu}>
-                            <GetIcon icon='hamburguer' className='medium-icon color-light-green' />
-                        </button>
+                    <div id='MobileNavBar'>
+                        <div id='Hamburger'>
+                            <button className='btn-hamburguer' onClick={handleToggleMenu}>
+                                <GetIcon icon='hamburguer' className='medium-icon color-light-green' />
+                            </button>
+                        </div>
                     </div>
                     <div id="Slidemenu" className={showSlider}>
                         <button className='btn-close-slidemenu' onClick={handleToggleMenu}>
