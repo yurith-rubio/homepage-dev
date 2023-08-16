@@ -31,7 +31,7 @@ export default function NavBar(){
                         </button>
                         <NavButton link='/services' children='Services' onClick={handleToggleMenu} />
                         <NavButton link='/projects' children='Projects' onClick={handleToggleMenu} />
-                        <NavButton link="https://yurith-rubio.github.io/yurith-says" children='Blog' onClick={handleToggleMenu} />
+                        <NavButton link='/blog' children='Blog' onClick={handleToggleMenu} />
                         <NavButton link='/about' children='About' onClick={handleToggleMenu} />
                         <NavButton link='/contact' children='Contact' onClick={handleToggleMenu} />
                     </div>
