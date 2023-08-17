@@ -22,6 +22,7 @@ function App() {
           <Route path="/" element={<Home/>}></Route>
           <Route path="/services" element={<Services/>}></Route>
           <Route path="/projects" element={<Projects/>}></Route>
+          <Route path="/blog" element={<Navigate to="/yurith-says/" replace={true}/>} ></Route>
           <Route path="/about" element={<About/>}>
             <Route index element={<Navigate to="/about/me" replace={true} />}></Route>
             <Route path="me" element={<AboutInfo/ >}></Route>

@@ -1,6 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import NavButton from './NavButton.jsx';
 import GetIcon from './GetIcon.jsx';
+import { Navigate } from 'react-router-dom';
 
 export default function NavBar(){
     const isMobile = window.innerWidth <= 767;
@@ -15,7 +16,12 @@ export default function NavBar(){
         }
         return;
     }
-    
+    function handleBlogButton(){
+        console.log("handleBlogButton ");
+        return window.location.replace("https://yurith-rubio.github.io/yurith-says/");
+        //return <Navigate to="https://yurith-rubio.github.io/yurith-says/" replace={true}/>
+    }
+
     if (isMobile) {
         return  <>
                     <div id='MobileNavBar'>
@@ -31,7 +37,7 @@ export default function NavBar(){
                         </button>
                         <NavButton link='/services' children='Services' onClick={handleToggleMenu} />
                         <NavButton link='/projects' children='Projects' onClick={handleToggleMenu} />
-                        <NavButton link='/blog' children='Blog' onClick={handleToggleMenu} />
+                        <NavButton link='/blog' children='Blog' onClick={handleBlogButton} />
                         <NavButton link='/about' children='About' onClick={handleToggleMenu} />
                         <NavButton link='/contact' children='Contact' onClick={handleToggleMenu} />
                     </div>
@@ -42,7 +48,7 @@ export default function NavBar(){
                 <div className='nav-bar-content content-boundary'>
                     <NavButton link='/services' children='Services' />
                     <NavButton link='/projects' children='Projects' />
-                    <NavButton link="https://yurith-rubio.github.io/yurith-says" children='Blog' />
+                    <NavButton link='/blog' children='Blog' onClick={handleBlogButton} />
                     <NavButton link='/about' children='About' />
                     <NavButton link='/contact' children='Contact' />
                 </div>
