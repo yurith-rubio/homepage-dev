@@ -1,4 +1,4 @@
-import {select, selectAll} from 'd3';
+import {select} from 'd3';
 import {useRef, useState, useEffect} from 'react';
 import ProjectsInfo from './ProjectsInfo.jsx';
 import projectsData from './ProjectsData.json';
@@ -71,7 +71,6 @@ export default function PortfolioChart(){
 
   const screenNavRef = useRef();
 
-
   function setCircle(){
     const circles = select(gRef.current);
     const textGroup = select(textRef.current);
@@ -101,9 +100,13 @@ export default function PortfolioChart(){
         .attr('src', value.logo)
         select('.project.shortDescription')
         .text(value.shortDescription)
-        select('.project.storeLink')
-        .attr('href', value.storeLink)
-        .text(value.heading)
+
+        if(value.storeLink) {
+          select('.project.storeLink')
+          .attr('href', value.storeLink)
+          .text(value.heading)
+        }
+
         select('.project.client')
         .text(value.client)
 
@@ -115,10 +118,10 @@ export default function PortfolioChart(){
         
         if(value.figmaLink) {
           select('.figma')
-          .text('Figma link:')
+          .text('Figma link: ')
           .append('b')
           .append('a')
-          .classed('project figmaLink', true)
+          .classed('project figmaLink underlined-link', true)
           .attr('href', value.figmaLink)
           .text('See design sketch on Figma')
           
@@ -277,7 +280,6 @@ export default function PortfolioChart(){
     <div className='project upper-cover-space top'></div>
     <div className='project pop-up-content'>
       <div className='project heading'>
-        {info.heading}
         <button className='button project close-pop-up icon-wrapper' onClick={handleClosePopupButton}>
           <GetIcon icon='xClose' className='medium-icon color-blue' />
         </button>
@@ -286,13 +288,13 @@ export default function PortfolioChart(){
         <div className='project task-description'>
           <img className='project imgLogo'/>
           <p className='project shortDescription'></p>
-          <p>Live store: <b><a className='project storeLink' target="_blank"></a></b></p>
+          <p>Live store: <b><a className='project storeLink underlined-link' target="_blank">No live store</a></b></p>
           <p className='figma'></p>
           <p>Client: <b className='project client'></b></p>
           <p>Tools:</p>
           <ul className='project tools'>
           </ul>
-          <p className='note'>Store not available? <span className='icon-info'></span>see my partner store <span>here</span> (password: therapiedecken).</p>
+          {/* <p className='note'>Store not available? <span className='icon-info'></span>see my partner store <span>here</span> (password: therapiedecken).</p> */}
         </div>
         <div className='project tasks-details'>
           <div className='max-500'>

@@ -6,10 +6,10 @@ export default function Contact(){
             If you have any questions, please contact me through:
             </p>
             <p>
-            My email: iamyurith@gmail.com
+            My email: <b>iamyurith@gmail.com</b>
             </p>
             <p>
-            My <a href="https://www.linkedin.com/in/yurith/">Linkedin</a>
+            My <a className='underlined-link' href="https://www.linkedin.com/in/yurith/" target="_blank" >Linkedin</a>
             </p>
         </div>
     </section>

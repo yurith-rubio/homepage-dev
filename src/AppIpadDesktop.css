@@ -3,7 +3,10 @@
         font-size: 4rem;
     }
     .big-text{
-        font-size: 2rem;
+        font-size: 3rem;
+        padding-bottom: 150px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     #Services{
         align-items: center;

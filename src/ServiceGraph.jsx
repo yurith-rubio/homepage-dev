@@ -4,7 +4,7 @@ import ServiceInfo from './ServiceInfo.jsx';
 
 export default function ServiceGraph(props) {
     
-    const {serviceName, isVisible} = props;
+    const {serviceName, stages, isVisible} = props;
     const [showLine, setShowLine] = useState(false);
     
     const arrow1 = <svg className={`${serviceName} service one arrow`} x="70" y="50" width="20" height="47" viewBox="0 0 26 47" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -19,14 +19,9 @@ export default function ServiceGraph(props) {
     const arrow4 = <svg className={`${serviceName} service four arrow`} x="410" y="190" width="20" height="47" viewBox="0 0 25 47" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 47.0002C11.4477 47.0002 11 46.5525 11 46.0002L11 37.0002C11 36.448 11.4477 36.0002 12 36.0002C12.5523 36.0002 13 36.4479 13 37.0002L13 45.0002L21 45.0002C21.5523 45.0002 22 45.4479 22 46.0002C22 46.5525 21.5523 47.0002 21 47.0002L12 47.0002ZM0.327608 0.515212C10.8116 -1.31962 19.8964 4.33313 23.3116 13.4622C26.7317 22.6043 24.4114 35.003 12.7071 46.7073L11.2929 45.2931C22.5886 33.9974 24.5183 22.396 21.4384 14.163C18.3536 5.91705 10.1884 0.819856 0.672392 2.48527L0.327608 0.515212Z" fill="#F0FFD9"/>
         </svg>;
-    const text1 = <text className={`${serviceName} service one text`} x="70" y="60">Coding</text>;
-    const text2 = <text className={`${serviceName} service two text`} x="350" y="60">Prototyping</text>;
-    const text3 = <text className={`${serviceName} service three text`} x="70" y="200">Designing</text>;
-    const text4 = <text className={`${serviceName} service four text`} x="350" y="200">Concept</text>;
 
     useEffect(() => {
         if(isVisible){
-            //console.log(`${serviceName} is visible`);
             gsap.to(`#${serviceName}-circle4`, {cx: 130, cy: 130, ease: "elastic.back"})
             .then(gsap.to(`#${serviceName}-circle3`, {cx: 130, cy: 370, delay: .2, ease: "elastic.back"}))
             .then(gsap.to(`#${serviceName}-circle2`, {cx: 370, cy: 130, delay: .4, ease: "elastic.back"}))
@@ -41,20 +36,16 @@ export default function ServiceGraph(props) {
             .then(gsap.to(`.${serviceName}.service.four.arrow`, {autoAlpha:1, delay:1, y:180 }))
             .then(gsap.to(`.${serviceName}.service.four.text`, {autoAlpha:1, delay:1, y:240 }));
         } else {
-            //console.log(`${serviceName} is NOT visible`);
             gsap.to(`#${serviceName}-circle1`, {cx: 250, cy: 250, ease: "elastic.back"})
             .then(gsap.to(`#${serviceName}-circle2`, {cx: 250, cy: 250, ease: "elastic.back"}))
             .then(gsap.to(`#${serviceName}-circle3`, {cx: 250, cy: 250, ease: "elastic.back"}))
             .then(gsap.to(`#${serviceName}-circle4`, {cx: 250, cy: 250, ease: "elastic.back"}))
             .then(setShowLine(false))
             .then(gsap.to(`.${serviceName}.service.one.arrow`, {autoAlpha:0, y:50}))
-            .then(gsap.to(`.${serviceName}.service.one.text`, {autoAlpha:0, y:50}))
+            .then(gsap.to(`.${serviceName}.service.text`, {autoAlpha:0, y:50}))
             .then(gsap.to(`.${serviceName}.service.two.arrow`, {autoAlpha:0, y:50}))
-            .then(gsap.to(`.${serviceName}.service.two.text`, {autoAlpha:0, y:50}))
             .then(gsap.to(`.${serviceName}.service.three.arrow`, {autoAlpha:0, y:190}))
-            .then(gsap.to(`.${serviceName}.service.three.text`, {autoAlpha:0, y:200}))
             .then(gsap.to(`.${serviceName}.service.four.arrow`, {autoAlpha:0, y:190}))
-            .then(gsap.to(`.${serviceName}.service.four.text`, {autoAlpha:0, y:200}));
         }
         
     }, [isVisible]);
@@ -68,10 +59,10 @@ export default function ServiceGraph(props) {
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
                         <circle className={showLine ? 'dotted-circle' : 'invisible' } cx='20' cy='20' r='13.5'/>
                     </svg>
-                    {text1}
-                    {text2}
-                    {text3}
-                    {text4}
+                    { Object.keys(stages).map((stage, key) => {
+                            return <text key={key} className={`${serviceName} service one text`} x={stages[stage].x} y={stages[stage].y}>{stage}</text>;
+                        })
+                    }
                     {arrow1}
                     {arrow2}
                     {arrow3}

@@ -1,20 +1,35 @@
-
 {
     "jobs": {
         "1": {
             "date": "2020-2023",
             "heading": "Shopify developer - Freelancer",
-            "description": ["Brainstorming, drafting and sketching website wireframes.", "Development of Websites and Shops using HTML, CSS, Javascript and Liquid.", "Working on a team with Marketing and Design to complete IT projects, with the use of Jira, Trello and Slack.", "New theme features implementation (filters by tag, slide-cart, section blocks development).", "Analysis of UX features’ development for future implementations based on conversation rates.", "Admin, Flow, Launchpad and Scripts management.", "Customize editing", "IT team lead management.", "Making use of the Shopify API to implement custom flows.", "App development (beginner)"]
+            "description": [
+                "Brainstorming, drafting and sketching website wireframes.",
+                "Development of Websites and Shops using HTML, CSS, Javascript and Liquid.",
+                "Working on a team with Marketing and Design to complete IT projects, with the use of Jira, Trello and Slack.",
+                "New theme features implementation (filters by tag, slide-cart, section blocks development).",
+                "Analysis of UX features’ development for future implementations based on conversation rates.",
+                "Admin, Flow, Launchpad and Scripts management.",
+                "Customize editing",
+                "IT team lead management.",
+                "Making use of the Shopify API to implement custom flows.",
+                "App development (beginner)"
+            ]
         },
         "2": {
             "date": "2020-2022",
             "heading": "Wordpress web developer - Freelancer",
-            "description": ["Creation and design of websites.", "Maintenance of existing Web and eCommerce projects, e.g. bug fixes, theme updates."]
+            "description": [
+                "Creation and design of websites.",
+                "Maintenance of existing Web and eCommerce projects, e.g. bug fixes, theme updates."
+            ]
         },
         "3": {
             "date": "Feb-May 2021",
             "heading": "Graphic Designer - Itonics",
-            "description": ["Helping the Marketing department."]
+            "description": [
+                "Helping the Marketing department."
+            ]
         },
         "4": {
             "date": "Feb-May 2021",
@@ -24,22 +39,32 @@
         "5": {
             "date": "2012-2015",
             "heading": "UI Designer - Worktrait, MX",
-            "description": ["Terrific improvement on worktrait.com, with an acute observation of the smallest details on the structure. Enhancement of User Experience and increased surfing time on the Webiste."]
+            "description": [
+                "Terrific improvement on worktrait.com, with an acute observation of the smallest details on the structure. Enhancement of User Experience and increased surfing time on the Webiste."
+            ]
         },
         "6": {
             "date": "2009-2011",
             "heading": "DiCorp, MX - Senior Visual Designer",
-            "description": ["Received great feedback from the Marketing team of MARS Inc. for a high-quality design. Development of creative concepts. Daily work with amazing colleagues."]
+            "description": [
+                "Received great feedback from the Marketing team of MARS Inc. for a high-quality design. Development of creative concepts. Daily work with amazing colleagues."
+            ]
         },
         "7": {
             "date": "2006-2009",
             "heading": "Junior Visual Designer - La Jabonera Studio, MX",
-            "description": ["Designing  the Coca-Cola internal magazine.", "Design the packaging for Productos Pennsylvania.", "Implementation of mock ups for based on market data for Kellogg Company."]
+            "description": [
+                "Designing  the Coca-Cola internal magazine.",
+                "Design the packaging for Productos Pennsylvania.",
+                "Implementation of mock ups for based on market data for Kellogg Company."
+            ]
         },
         "8": {
             "date": "2006",
             "heading": "Bachelor Student - Universidad del Valle de Mexico",
-            "description": ["Received my Bachelor of Arts in Graphic Design."]
+            "description": [
+                "Received my Bachelor of Arts in Graphic Design."
+            ]
         }
     }
 }

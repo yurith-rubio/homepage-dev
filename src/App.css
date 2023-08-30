@@ -89,14 +89,24 @@ h1{
 p{
   font-size: 18px;
 }
-a:not(.storeLink){
+a:not(.underlined-link){
   text-decoration: none;
+}
+a:not(.storeLink){
   color: var(--light-green);
+}
+.underlined-link{
+  text-decoration-color: var(--orange);
+  text-underline-offset: 8px;
+  text-decoration-thickness: 1px;
+  font-weight: bold;
 }
 .storeLink{
   color: var(--text-color);
-  text-decoration-color: var(--orange);
-  text-underline-offset: 8px;
+}
+
+.big-text{
+  font-weight: bold;
 }
 /* ---------- */
 
@@ -326,7 +336,7 @@ svg.svg-service-ball {
   stroke-dasharray: 100;
   stroke-dashoffset: 100;
   stroke: var(--light-green);
-  stroke-width: .1px;
+  stroke-width: .5px;
   transform-origin: center;
   transform: rotate(40deg);
   animation: circle-line 1s forwards;
@@ -336,6 +346,9 @@ svg.svg-service-ball {
   display: flex;
   width: 100%;
   transform: scale(.7);
+}
+.svg-service-wrapper .arrow{
+  display: none;
 }
 .service.text{
   font-family: 'Open Sans', sans-serif;
@@ -347,7 +360,9 @@ svg.svg-service-ball {
 }
 #circle1:before{
   content: "Prototyping";
-
+}
+.project.figmaLink{
+  color: var(--bg-color);
 }
 
 /* SERVICES AND PROJECTS */
@@ -552,6 +567,7 @@ svg.svg-service-ball {
   padding: 30px 0;
   width: 100%;
   z-index: 1;
+  left: 0;
 }
 .nav-bar-content{
   display: flex;

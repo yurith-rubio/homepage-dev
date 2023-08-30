@@ -354,7 +354,7 @@
             "logo": "/nico-logo.webp",
             "shortDescription": "Sells robot litter boxes to clean the dung of cats.",
             "storeLink": "https://nico-playground.myshopify.com/",
-            "client": "Denisse Pina",
+            "client": "Denisse Pina, password: nico",
             "tools": ["HTML", "CSS", "Liquid", "Javascript", "Figma"],
             "tasks": [
                 {
@@ -402,10 +402,11 @@
         {
             "name": "swissens",
             "heading": "Swissens",
-            "description": ["Here is the description of the prroject Swissens.ch"],
+            "description": ["I designed a landing page for Swissens"],
             "logo": "/swisens-logo.webp",
             "shortDescription": "Sells robot litter boxes to clean the dung of cats.",
             "storeLink": "https://www.swisens.ch/",
+            "figmaLink": "https://www.figma.com/proto/gEjrVhfU8kI8rQ6ooFmz7P/Swisens-FILES?type=design&node-id=294-65&t=op6OyCGeRm9pfqy7-0&scaling=min-zoom&page-id=270%3A55&starting-point-node-id=294%3A65&show-proto-sidebar=1",
             "client": "Petra Müller",
             "tools": ["HTML", "CSS", "Wordpress", "Elementor", "Figma"],
             "tasks": [
@@ -437,6 +438,62 @@
                 }
             ],
             "tags": ["landing-page", "design"]
+        },
+        {
+            "name": "Food creator",
+            "heading": "Food creator app",
+            "description": ["Sketch of an app that creates meals and shows the macronutrients, calories and macronutrients percentage"],
+            "logo": "/yurviz-logo.png",
+            "shortDescription": "Project that intends to show info of a meal in a creative way",
+            "storeLink": "https://yurith-rubio.github.io/FoodMealCreator/",
+            "figmaLink": "https://www.figma.com/proto/gkcRBzgfyXCGRF1Xr9TYNB/Food-meal-creator?type=design&node-id=23-20&t=op6OyCGeRm9pfqy7-0&scaling=min-zoom&page-id=0%3A1",
+            "client": "Personal project",
+            "tools": ["d3", "HTML", "CSS", "Liquid", "Javascript", "React", "Figma"],
+            "tasks": [
+                {
+                    "title": "Application prototype",
+                    "items": [
+                        "Design concept",
+                        "Creation of graphs with the use of d3",
+                        "Development using React"
+                    ]
+                }
+            ],
+            "screens": [
+                {
+                    "screenHeading": "Application prototype",
+                    "screenImage": "/fc-landing-page.webp",
+                    "screenGadget": "computer"
+                }
+            ],
+            "tags": ["d3", "react", "data-visualization", "design"]
+        },
+        {
+            "name": "Tableau charts",
+            "heading": "Tableau charts",
+            "description": ["A short project to play with charts"],
+            "logo": "/yurviz-logo.png",
+            "shortDescription": "Use of Tableau",
+            "client": "Personal project",
+            "tools": ["Tableau"],
+            "tasks": [
+                {
+                    "title": "Application prototype",
+                    "items": [
+                        "Design concept",
+                        "Creation of graphs with the use of d3",
+                        "Development using React"
+                    ]
+                }
+            ],
+            "screens": [
+                {
+                    "screenHeading": "Tableau charts",
+                    "screenImage": "/tableau-execute-overview.webp",
+                    "screenGadget": "computer"
+                }
+            ],
+            "tags": ["tableau", "data-visualization"]
         }
     ]
 }

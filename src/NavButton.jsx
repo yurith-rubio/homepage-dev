@@ -1,4 +1,4 @@
-import {NavLink, Navigate} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 export default function NavButton(props){
     const {children, onClick, link} = props;

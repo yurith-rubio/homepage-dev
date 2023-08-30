@@ -28,6 +28,10 @@
     #ServiceIntro{
         padding-top: 50px;
     }
+    /* SERVICES */
+    #ball-Data, #ball-Web, #ball-Prototyping, #ball-Shopify{
+        scale: .7;
+    }
     /* PROJECTS */
     #Projects, #ServicesSection{
         padding-top: 70px;
