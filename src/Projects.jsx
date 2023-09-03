@@ -130,6 +130,20 @@ export default function PortfolioChart(){
           .text('');
         }
 
+        if(value.webLink) {
+          select('.webLink')
+          .text('Web link: ')
+          .append('b')
+          .append('a')
+          .classed('project webLink underlined-link', true)
+          .attr('href', value.webLink)
+          .text('See it on this link')
+          
+        } else {
+          select('.webLink')
+          .text('');
+        }
+
         select('.project.tools')
         .selectAll('li')
         .data(value.tools)
@@ -243,7 +257,19 @@ export default function PortfolioChart(){
     return filteredFigmas;
   }
 
+  function hasWebLink() {
+    const filteredWebs = [];
+    const data = projectsData.data;
+    for (let project of data) {
+      if (project.webLink) {
+        filteredWebs.push(project.name);
+      }
+    }
+    return filteredWebs;
+  }
+
   useEffect(() => {
+    hasWebLink();
     hasFigmaLink();
     setCircle();
   }, [data]);
@@ -289,6 +315,7 @@ export default function PortfolioChart(){
           <img className='project imgLogo'/>
           <p className='project shortDescription'></p>
           <p>Live store: <b><a className='project storeLink underlined-link' target="_blank">No live store</a></b></p>
+          <p className='webLink'></p>
           <p className='figma'></p>
           <p>Client: <b className='project client'></b></p>
           <p>Tools:</p>

@@ -361,7 +361,7 @@ svg.svg-service-ball {
 #circle1:before{
   content: "Prototyping";
 }
-.project.figmaLink{
+.project.figmaLink, .project.webLink{
   color: var(--bg-color);
 }
 
